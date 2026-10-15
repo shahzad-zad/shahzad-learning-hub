@@ -2,7 +2,7 @@
 
 ## Portfolio copy
 
-Source: F:/My Portfolio/portfolio website/shahzad-portfolio/data/site-content.json. Used the biography, public email, LinkedIn URL and summaries/titles of the first three research projects. Qualifications come from src/components/home-client.tsx: BE in Materials Engineering from NUST and MSc from Skoltech. Header artwork source: F:/My Portfolio/future is here.png, matching the supplied image of Shahzad holding The future is here sign. The complete transparent artwork is displayed without cropping. These are supplied portfolio claims, not independently verified new claims.
+Source: F:/My Portfolio/portfolio website/shahzad-portfolio/data/site-content.json. Used the biography, public email, LinkedIn URL and summaries/titles of the first three research projects. Qualifications come from src/components/home-client.tsx: BE in Materials Engineering from NUST and MSc from Skoltech. Header artwork source: F:/My Portfolio/future is here.png, matching the supplied image of Shahzad holding The future is here sign. CSS crops the empty transparent margins and enlarges the artwork while keeping the face and sign visible; the original PNG is unchanged. These are supplied portfolio claims, not independently verified new claims.
 
 The local `portfolio-reference` holds copies of public content and selected presentation files. No edits were made to the original portfolio. Its server CMS, password-related code, dependencies, caches, CVs and unrelated large images are excluded. The student site is a static adaptation of relevant content, not a deployment of the original Next.js server app.
 
