@@ -27,3 +27,7 @@ The browser checks above were also repeated successfully against the live GitHub
 On 15 October 2026, the same website was published at https://shahzad-zad.github.io/ from the new repository https://github.com/shahzad-zad/shahzad-zad.github.io. GitHub Actions deployment run 38699788223 completed successfully. All browser interaction checks were repeated successfully at this root address, including laptop, tablet, mobile, note readers, banks and both embedded chapter pages. Future updates push to the new repository through the `origin` remote; the previous project repository is retained as `legacy`.
 
 Run `node scripts/verify-live.cjs` to verify the current website files and `node scripts/browser-qa.cjs https://shahzad-zad.github.io/` for live browser checks.
+
+## Personal branding and class pages
+
+The personal logo replaces the school crest throughout the website and copied chapter pages. Homepage school attribution, teacher caption, Start here label, global resource library and global search have been removed. Four class links open class-specific sections and search. A separate portfolio presents all nine original projects. The portrait links to the portfolio and reveals About your teacher on hover and keyboard focus, with a visible touch-device label. Browser checks cover all class pages at laptop, tablet, mobile and 320px widths; class-scoped search, bookmarks, empty states, portfolio details, notes and both embedded chapter pages pass. Current site files total 19, with six student resources.

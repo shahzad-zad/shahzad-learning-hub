@@ -1,42 +1,30 @@
-# Shahzad's Learning Hub
+# Shahzad Learning Hub
 
-A student website for Classes 9–12 at The Educators (Daharki Campus), using the existing Educators dark theme and content adapted from Shahzad's local portfolio.
+Personal student website by Sir Shahzad Gullab Bhatti.
 
 Website: https://shahzad-zad.github.io/
 
 Repository: https://github.com/shahzad-zad/shahzad-zad.github.io
 
-## Open locally
+## Student flow
 
-Open `site/index.html` directly, or run `python -m http.server 8767 --bind 127.0.0.1 --directory site` from this folder and visit http://127.0.0.1:8767. The website has no package installation or build requirement.
+The homepage shows four class cards. Each opens `class.html?class=9` (or 10, 11, 12), with search restricted to that class and separate sections for its available notes, practice and MCQ banks. There is no global resource library or homepage search. Test-paper files are not published.
 
-## Included resources
+The Portfolio navigation link and homepage picture open `portfolio.html`, containing the biography, qualifications and all nine projects from the supplied portfolio. Hovering or focusing the picture reveals About your teacher; this label stays available on touch devices. The homepage has no teacher caption, Start here label or school branding.
+
+## Resources
 
 | Class | Chapter | Available |
 | --- | --- | --- |
-| 9 | Kinematics | 50-MCQ revision reader |
-| 10 | Sound | 50-MCQ revision reader |
-| 11 | Kinematics | Full notes, embedded cards and MCQs |
-| 12 | First Law of Thermodynamics | Full notes, embedded cards and MCQs |
+| 9 | Kinematics | 50-question MCQ revision bank |
+| 10 | Sound | 50-question MCQ revision bank |
+| 11 | Kinematics | Full notes and embedded cards and MCQs |
+| 12 | First Law of Thermodynamics | Full notes and embedded cards and MCQs |
 
-The library can filter by class, subject and resource type and search by chapter or topic. Filter links can be bookmarked. Practice pages run in an iframe or open separately. Notes and banks support printing. Existing progress stays local to the student's browser. No accounts, student uploads or server CMS are included.
+## Maintain
 
-## Folder layout
+`site` is the only published folder. `content/resources.json` defines class resources. `scripts/sync-materials.cjs` refreshes the teaching copies, new personal logo, generated notes and separate portfolio. The original class files and portfolio remain untouched. School branding in the copied chapter headers is replaced during syncing; scientific content and progress keys are preserved. Personal logo source: `../Educators-Master/assets/Shahzad-logo.png`.
 
-- `site/`: complete website and student resources, the only folder deployed.
-- `content/resources.json`: resource metadata and original file references.
-- `scripts/`: sync, validation, browser QA and publishing helpers.
-- `portfolio-reference/`: local copy of selected public portfolio source and content, ignored by Git.
-- `design.md`: theme, structure and accessibility decisions.
-- `docs/`: content maintenance, provenance, publishing and validation notes.
-- `.github/workflows/pages.yml`: GitHub Pages deployment workflow.
+Preview with `python -m http.server 8767 --bind 127.0.0.1 --directory site`. Run `node scripts/verify-static.cjs` and the browser checks after changing navigation or content. Commit and push to `origin/main` to publish at the root address; `legacy` retains the previous project-site repository. Publishing requires no application build or package installation.
 
-## Updating resources
-
-See `docs/content-guide.md`. Run `node scripts/sync-materials.cjs` on this computer after editing original teaching files or portfolio data. Run `node scripts/verify-static.cjs` after updates. The published site is self-contained; the original portfolio folder is not needed to view it.
-
-## GitHub Pages
-
-User-site repository: `shahzad-zad.github.io`. See `docs/github-pages.md` for publication and updates. Never upload `portfolio-reference`, `tmp`, textbook PDFs or credentials. The deployment workflow uploads only `site`, not the rest of the workspace.
-
-Test papers are kept in the original class folders for teacher use and are not published on this website.
+The local `portfolio-reference` and `tmp` folders are excluded from Git. The original teacher test documents remain in their class folders. Student progress is stored only in the student's browser.

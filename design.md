@@ -23,3 +23,7 @@ Use real buttons and links, visible keyboard focus, labelled search and selects,
 ## Packaging
 
 `site` is the only published directory. All paths are relative so GitHub Pages project subpaths work. Keep original teaching files and the original portfolio untouched. A local reference copy of the public portfolio content is excluded from Git. Copy only selected student resources and portrait/logo into `site`. GitHub Actions validates the static site before deploying. No server, CMS, external font, analytics or API key is required.
+
+## Personal branding and navigation update
+
+Use the supplied Shahzad Learning Hub blue and gold logo throughout the published website, generated readers and copied chapter pages. School names and logos are removed from the student website. Keep the existing dark palette and mint action buttons. The homepage contains the hero and class cards only, with a hover and focus tooltip on the portrait linking to a separate portfolio page. Each class opens its own page with class-scoped search and relevant grouped resource sections. Portfolio.html presents all nine supplied portfolio projects with expandable details.

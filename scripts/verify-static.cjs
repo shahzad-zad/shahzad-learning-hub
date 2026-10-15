@@ -13,6 +13,7 @@ for(const r of resources){
 }
 for(const file of files.filter(f=>f.endsWith('.html'))){
  const html=fs.readFileSync(file,'utf8');
+ if(/the educators|daharki/i.test(html))errors.push('School branding remains in published HTML: '+file);
  if(!html.includes('name="viewport"'))errors.push('Missing viewport: '+file);
  for(const match of html.matchAll(/(?:src|href)=["']([^"']+)["']/g)){
    const value=match[1];if(/^(?:[a-z]+:|#|\/\/)/i.test(value))continue;
