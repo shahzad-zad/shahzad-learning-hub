@@ -4,6 +4,7 @@ const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirector
 const files=walk(site),errors=[];
 const context=vm.createContext({window:{}});vm.runInContext(fs.readFileSync(path.join(site,'data/catalog.js'),'utf8'),context);
 const {resources}=context.window.LEARNING_HUB;
+if(resources.some(r=>r.type==='paper')||files.some(f=>f.endsWith('.docx')))errors.push('Test papers must not be published on the student website');
 if(new Set(resources.map(r=>r.id)).size!==resources.length)errors.push('Duplicate resource IDs');
 for(const r of resources){
  const target=path.resolve(site,r.url.split(/[?#]/)[0]);

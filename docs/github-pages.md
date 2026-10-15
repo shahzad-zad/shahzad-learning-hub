@@ -17,6 +17,6 @@ The workflow checks paths, uploads only `site` and deploys with the official Git
 
 ## Future updates
 
-Commit and push changes to main. Actions automatically validates and republishes. The local reference copy of your portfolio is ignored. Repositories are public so students can access the website without an account. Public downloads include the explanations and keys already described in the library.
+Commit and push changes to main. Actions automatically validates and republishes. The local reference copy of your portfolio is ignored. Repositories are public so students can access the website without an account. Test-paper documents are not published on the student website.
 
 The local `origin` remote points to the new user-site repository. The previous `shahzad-learning-hub` repository remains available as `legacy`; it is not the target for future updates.

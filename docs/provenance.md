@@ -11,7 +11,7 @@ The local `portfolio-reference` holds copies of public content and selected pres
 - Class 9 and 10 banks come from the existing chapter-2-mcq-bank.json files. All 50 questions, options, correct answers and explanations per class are preserved.
 - Class 11 and 12 embedded practice pages are byte-for-byte copies of the completed standalone chapter HTML files. Their inline assets and isolated storage keys are preserved.
 - Class 11 and 12 notes are extracted from the original content.js NOTES arrays without rewriting the scientific content, 16 sections per class.
-- Four final Word test papers with solutions are copied from the respective class test-papers folders.
+- Test-paper documents remain in the original class folders and are excluded from the published site.
 - Logo source: Educators-Master/assets/logo.png.
 
 The full textbook PDFs, temporary verification files and unreviewed subject test drafts are not published. Class 10 Chapter 2 is Sound, labelled Unit 11 in the local textbook; Class 12 Chapter 2 is First Law of Thermodynamics, labelled Unit 16 in its local textbook.

@@ -35,18 +35,6 @@ window.LEARNING_HUB = {
       "detail": "50 MCQs · Solutions included"
     },
     {
-      "id": "ix-paper",
-      "class": 9,
-      "subject": "Physics",
-      "chapter": 2,
-      "title": "Kinematics Test Paper",
-      "type": "paper",
-      "description": "A 16-mark chapter test, followed by worked solutions and the final answer key.",
-      "url": "materials/class-9/kinematics-test-with-solutions.docx",
-      "format": "Word",
-      "detail": "16 MCQs · 25 minutes"
-    },
-    {
       "id": "x-bank",
       "class": 10,
       "subject": "Physics",
@@ -57,18 +45,6 @@ window.LEARNING_HUB = {
       "url": "bank.html?id=x-sound",
       "format": "HTML",
       "detail": "50 MCQs · Solutions included"
-    },
-    {
-      "id": "x-paper",
-      "class": 10,
-      "subject": "Physics",
-      "chapter": 2,
-      "title": "Sound Test Paper",
-      "type": "paper",
-      "description": "A 16-mark test with mixed difficulty, worked solutions and an answer key.",
-      "url": "materials/class-10/sound-test-with-solutions.docx",
-      "format": "Word",
-      "detail": "16 MCQs · 25 minutes"
     },
     {
       "id": "xi-notes",
@@ -95,18 +71,6 @@ window.LEARNING_HUB = {
       "detail": "60 MCQs · 36 cards"
     },
     {
-      "id": "xi-paper",
-      "class": 11,
-      "subject": "Physics",
-      "chapter": 2,
-      "title": "Kinematics Test Paper",
-      "type": "paper",
-      "description": "20 questions with worked solutions and the final key. Includes varied numerical values.",
-      "url": "materials/class-11/kinematics-test-with-solutions.docx",
-      "format": "Word",
-      "detail": "20 MCQs · Solutions included"
-    },
-    {
       "id": "xii-notes",
       "class": 12,
       "subject": "Physics",
@@ -129,18 +93,6 @@ window.LEARNING_HUB = {
       "url": "materials/class-12/chapter-2-practice.html",
       "format": "Interactive",
       "detail": "60 MCQs · 36 cards"
-    },
-    {
-      "id": "xii-paper",
-      "class": 12,
-      "subject": "Physics",
-      "chapter": 2,
-      "title": "Thermodynamics Test Paper",
-      "type": "paper",
-      "description": "A 20-question test with conceptual problems, calculations, solutions and the final key.",
-      "url": "materials/class-12/thermodynamics-test-with-solutions.docx",
-      "format": "Word",
-      "detail": "20 MCQs · Solutions included"
     }
   ]
 };

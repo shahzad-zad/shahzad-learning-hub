@@ -1,5 +1,11 @@
 # Website verification
 
+## Current student resource policy
+
+On 15 October 2026, all four downloadable test papers were removed from the published directory and catalogue, along with the Test papers filter and homepage metadata reference. The original teacher documents remain in their class folders. The current site has 6 resources and 17 published files: notes, interactive practice and MCQ revision banks. Static validation rejects test-paper catalogue entries and Word files in the published directory. Browser checks passed again at all four viewport sizes after removal. Updates are published to both the root-site repository and the earlier project-site repository so old direct links also stop serving papers.
+
+The checks below document the earlier initial publication; their 10-resource and 21-file counts predate test-paper removal.
+
 Static validation passed for all 10 catalogue resources and 21 published files. All relative links resolve, and resource metadata has valid class/type values. The site has no root-absolute asset paths, making it suitable for a GitHub Pages repository subpath.
 
 Browser checks passed at 1440 × 1000, 768 × 1024, 390 × 844 and 320 × 900. Home and filtered library have no horizontal overflow. All logo/portrait images load. Class shortcuts, combined type filters, search, empty state, clearing filters and bookmarked filter URLs work. Class shortcuts also move keyboard focus to the resource heading.
