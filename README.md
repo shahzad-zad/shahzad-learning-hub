@@ -1,4 +1,4 @@
-# Shahzad Learning Hub
+# Shahzad’s Learning Hub
 
 Personal student website by Sir Shahzad Gullab Bhatti.
 

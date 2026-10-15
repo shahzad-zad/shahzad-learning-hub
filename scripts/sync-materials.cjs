@@ -19,14 +19,14 @@ for (const r of resources) if(r.source) {
   const target=path.join(site,r.url);
   let html=fs.readFileSync(target,'utf8');
   html=html.replace(/(<img\s+id="logo"\s+src=")[^"]+"/,'$1../../assets/logo.png"')
-   .replaceAll('The Educators (Daharki Campus)','Shahzad Learning Hub').replaceAll('The Educators','Shahzad Learning Hub').replaceAll('Daharki campus branding','Personal hub branding');
+   .replaceAll('The Educators (Daharki Campus)','Shahzad’s Learning Hub').replaceAll('The Educators','Shahzad’s Learning Hub').replaceAll('Daharki campus branding','Personal hub branding');
   fs.writeFileSync(target,html,'utf8');
  }
 }
 const banks = {};
 for (const [grade,id] of [['9th','ix-kinematics'],['10th','x-sound']]) {
  banks[id] = JSON.parse(fs.readFileSync(path.join(workspace,grade,'physics-mcq-bank/chapter-2-mcq-bank.json'),'utf8'));
- banks[id].school='Shahzad Learning Hub';
+ banks[id].school='Shahzad’s Learning Hub';
 }
 write('site/data/banks.js','window.MCQ_BANKS = '+JSON.stringify(banks)+';\n');
 for (const [grade,title,slug] of [['11th','Kinematics','kinematics'],['12th','First Law of Thermodynamics','thermodynamics']]) {
@@ -35,7 +35,7 @@ for (const [grade,title,slug] of [['11th','Kinematics','kinematics'],['12th','Fi
  const {NOTES,TOPICS} = context.exported;
  const classNumber = parseInt(grade);
  const blocks = NOTES.map((n,i)=>`<details class="note-block" id="note-${i+1}" open><summary>${String(i+1).padStart(2,'0')} ${esc(n.title)}</summary><div class="note-content">${n.html}</div></details>`).join('\n');
- const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Class ${classNumber} ${esc(title)} Notes</title><link rel="icon" href="../../assets/logo.png"><link rel="stylesheet" href="../../styles.css"><script src="../../reader.js" defer></script></head><body><header class="site-header"><div class="container header-inner"><a class="brand" href="../../index.html"><img src="../../assets/logo.png" width="44" height="44" alt="Shahzad Learning Hub"></a><a href="../../chapter.html?class=${classNumber}&chapter=2&subject=Physics">← Class ${classNumber} resources</a></div></header><main class="reader"><p class="eyebrow">CLASS ${classNumber} · PHYSICS · CHAPTER 2</p><h1>${esc(title)} Notes</h1><p class="reader-intro">${NOTES.length} sections · Sindh Textbook Board</p><div class="reader-tools"><button class="button" data-expand>Expand all</button><button class="button" data-collapse>Collapse all</button><button class="button primary" data-print>Print notes</button><a class="button" href="../../viewer.html?resource=${classNumber===11?'xi':'xii'}-practice">Practise this chapter ↗</a></div>${blocks}<p class="reader-footer">Shahzad Learning Hub<br>Prepared by Sir Shahzad Gullab Bhatti</p></main></body></html>`;
+ const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>Class ${classNumber} ${esc(title)} Notes</title><link rel="icon" href="../../assets/logo.png"><link rel="stylesheet" href="../../styles.css"><script src="../../reader.js" defer></script></head><body><header class="site-header"><div class="container header-inner"><a class="brand" href="../../index.html"><img src="../../assets/logo.png" width="44" height="44" alt="Shahzad’s Learning Hub"></a><a href="../../chapter.html?class=${classNumber}&chapter=2&subject=Physics">← Class ${classNumber} resources</a></div></header><main class="reader"><p class="eyebrow">CLASS ${classNumber} · PHYSICS · CHAPTER 2</p><h1>${esc(title)} Notes</h1><p class="reader-intro">${NOTES.length} sections · Sindh Textbook Board</p><div class="reader-tools"><button class="button" data-expand>Expand all</button><button class="button" data-collapse>Collapse all</button><button class="button primary" data-print>Print notes</button><a class="button" href="../../viewer.html?resource=${classNumber===11?'xi':'xii'}-practice">Practise this chapter ↗</a></div>${blocks}<p class="reader-footer">Shahzad’s Learning Hub<br>Prepared by Sir Shahzad Gullab Bhatti</p></main></body></html>`;
  write(`site/materials/class-${classNumber}/${slug}-notes.html`,html);
 }
 const publicResources = resources.map(({source,...r})=>r);

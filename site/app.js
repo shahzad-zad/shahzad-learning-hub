@@ -14,7 +14,7 @@ if(![9,10,11,12].includes(grade)||(chapterView&&!items.length)){
  $('class-title').textContent=chapterView?'Chapter unavailable':'Choose a class';$('class-intro').textContent='Return to Classes to choose an available chapter.';$('class-search').hidden=true;
 }else{
  const selected=chapters.find(g=>g.chapter===chapter&&g.subject===subject);
- document.title=(chapterView?`Class ${grade} Chapter ${chapter}`:`Class ${grade}`)+' | Shahzad Learning Hub';
+ document.title=(chapterView?`Class ${grade} Chapter ${chapter}`:`Class ${grade}`)+' | Shahzad’s Learning Hub';
  $('class-title').textContent=chapterView?`Chapter ${chapter}: ${chapterName(selected)}`:`Class ${grade}`;
  $('class-intro').textContent=chapterView?`Class ${grade} · ${subject}`:'Choose a chapter';
  $('search').placeholder=chapterView?'Search this chapter…':`Search within Class ${grade}…`;

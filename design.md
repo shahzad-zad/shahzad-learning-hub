@@ -1,6 +1,6 @@
-# Shahzad Learning Hub design
+# Shahzad’s Learning Hub design
 
-Personal learning website for Classes 9–12. Show new-logo.png beside the visible name Shahzad Learning Hub. Use a midnight background, pale text, muted blue secondary text and mint buttons. Preserve the supplied logo colours.
+Personal learning website for Classes 9–12. Show new-logo.png beside the visible name Shahzad’s Learning Hub. Use a midnight background, pale text, muted blue secondary text and mint buttons. Preserve the supplied logo colours.
 
 Navigation: Home → Class → Chapter → Notes, Cards or MCQs. Class and chapter pages have scoped search. Chapters sort numerically within each subject. Show only prepared chapters; all four classes currently have Chapter 2. Keep test papers outside the website.
 
@@ -13,3 +13,5 @@ Use responsive layouts for laptop, tablet and phone, visible focus, labelled con
 Homepage class cards show only Class and a large bold number. Chapter titles and resource descriptions appear after opening a class. Scope these styles to the homepage class grid so chapter cards retain their names.
 
 Class card typography matches the hero: Georgia italic for Class and the inherited sans-serif at weight 800 for the number. Compact dark cards have individual pastel accents, a circular arrow and smooth lift, glow and number movement on hover. Keyboard focus has matching emphasis; reduced-motion disables movement.
+
+All home Class labels and accents use mint. Scope homepage card rules under #classes to prevent chapter layouts inheriting them. Chapter cards stack subject, chapter number, title and formats vertically. Flip cards cycle through pastel mint, blue, gold and lilac accents with entrance, hover and 3D flip animations; reduced-motion disables movement.

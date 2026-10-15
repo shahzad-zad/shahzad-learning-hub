@@ -6,7 +6,7 @@ if(!data||chapter!==2){$('study-title').textContent='Chapter unavailable';docume
 else{
  const all=data[mode],storageKey=`shahzad-study-${grade}-${mode}-v1`;
  let items=[...all],index=0,responses={},flips={};
- document.title=`Class ${grade} ${data.title} ${mode==='cards'?'Cards':'MCQs'} | Shahzad Learning Hub`;
+ document.title=`Class ${grade} ${data.title} ${mode==='cards'?'Cards':'MCQs'} | Shahzad’s Learning Hub`;
  $('study-title').textContent=mode==='cards'?'Cards':'MCQs';$('study-meta').textContent=`Class ${grade} · Chapter 2 · ${data.title}`;
  $('study-back').href=`chapter.html?class=${grade}&chapter=2&subject=Physics`;
  $('study-topic').innerHTML='<option value="all">All topics</option>'+data.topics.map(t=>`<option value="${esc(t.id)}">${esc(t.name)}</option>`).join('');
@@ -21,6 +21,7 @@ else{
  function render(){
   const q=items[index];$('study-position').textContent=`${index+1} of ${items.length} · ${topicName(q.topic)}`;$('study-progress').max=items.length;$('study-progress').value=index+1;$('study-previous').disabled=index===0;$('study-feedback').hidden=true;
   if(mode==='cards'){
+   $('study-question').style.setProperty('--card-accent',['#6ee7b7','#8cb8ff','#f5d782','#c4b5fd'][index%4]);
    $('study-question').innerHTML=`<button id="study-card" class="study-flip${flips[q.id]?' is-flipped':''}" aria-label="${esc(flips[q.id]?'Answer: '+q.answer+'. '+q.explanation:q.prompt+'. Tap to reveal the answer')}"><span class="study-flip-inner"><span class="study-face study-front"><span class="study-card-prompt">${esc(q.prompt)}</span><small>Tap or click to flip</small></span><span class="study-face study-back"><strong>${esc(q.answer)}</strong><span>${esc(q.explanation)}</span><small>Tap or click to flip back</small></span></span></button>`;
    $('study-card').addEventListener('click',()=>{flips[q.id]=!flips[q.id];$('study-card').classList.toggle('is-flipped',Boolean(flips[q.id]));$('study-card').setAttribute('aria-label',flips[q.id]?'Answer: '+q.answer+'. '+q.explanation:q.prompt+'. Tap to reveal the answer');save();});
   }else{

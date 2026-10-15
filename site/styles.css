@@ -23,17 +23,37 @@
 @media(max-width:720px){.brand{gap:8px}.brand img{width:40px;height:44px}.brand .brand-title{font-size:13px;max-width:100px}.study-page{width:calc(100% - 36px);margin-top:25px}.study-page h1{font-size:30px}.study-settings{gap:12px}.study-mcq{padding:20px}.study-mcq h2{font-size:21px}.study-options{grid-template-columns:1fr}.study-option{font-size:15px;padding:14px}.study-face{padding:23px}.study-back strong{font-size:21px}.study-back>span{font-size:16px}.study-flip-inner{min-height:460px}.study-page .reader-footer{font-size:11px}}
 
 /* Homepage class choices use the hero's sans-serif / Georgia pairing. */
-.class-grid>.class-card{--accent:#6ee7b7;position:relative;isolation:isolate;overflow:hidden;min-height:208px;display:flex;align-items:center;justify-content:space-between;padding:28px;border-radius:22px;background:linear-gradient(145deg,#142331,#0d1724);border:1px solid #2b3c51;color:var(--text);transition:transform .32s cubic-bezier(.2,.7,.2,1),border-color .32s,box-shadow .32s}
-.class-grid>.class-card:nth-child(2){--accent:#8cb8ff}.class-grid>.class-card:nth-child(3){--accent:#f5d782}.class-grid>.class-card:nth-child(4){--accent:#c4b5fd}
-.class-grid>.class-card:before{content:"";position:absolute;z-index:-1;inset:-40%;background:radial-gradient(circle at 85% 75%,color-mix(in srgb,var(--accent) 18%,transparent),transparent 53%);opacity:.35;transform:translate(14px,14px);transition:opacity .35s,transform .45s}
-.class-grid>.class-card>strong{display:flex;flex-direction:column;align-items:flex-start;gap:6px;font-family:inherit;font-weight:800}
-.class-grid>.class-card>strong>em{font-family:Georgia,serif;font-size:27px;font-weight:400;line-height:1.2;color:var(--accent);letter-spacing:-.6px}
-.class-grid>.class-card>strong>span{font-size:88px;font-weight:800;letter-spacing:-4px;line-height:1;transition:transform .32s cubic-bezier(.2,.7,.2,1)}
+#classes .class-grid>.class-card{--accent:#6ee7b7;position:relative;isolation:isolate;overflow:hidden;min-height:208px;display:flex;align-items:center;justify-content:space-between;padding:28px;border-radius:22px;background:linear-gradient(145deg,#142331,#0d1724);border:1px solid #2b3c51;color:var(--text);transition:transform .32s cubic-bezier(.2,.7,.2,1),border-color .32s,box-shadow .32s}
+
+#classes .class-grid>.class-card:before{content:"";position:absolute;z-index:-1;inset:-40%;background:radial-gradient(circle at 85% 75%,color-mix(in srgb,var(--accent) 18%,transparent),transparent 53%);opacity:.35;transform:translate(14px,14px);transition:opacity .35s,transform .45s}
+#classes .class-grid>.class-card>strong{display:flex;flex-direction:column;align-items:flex-start;gap:6px;font-family:inherit;font-weight:800}
+#classes .class-grid>.class-card>strong>em{font-family:Georgia,serif;font-size:27px;font-weight:400;line-height:1.2;color:var(--accent);letter-spacing:-.6px}
+#classes .class-grid>.class-card>strong>span{font-size:88px;font-weight:800;letter-spacing:-4px;line-height:1;transition:transform .32s cubic-bezier(.2,.7,.2,1)}
 .class-open{width:42px;height:42px;flex-shrink:0;display:grid;place-items:center;align-self:flex-end;border:1px solid #3b4b60;border-radius:50%;font-size:21px;color:var(--accent);transition:background .3s,color .3s,transform .3s,border-color .3s}
-.class-grid>.class-card:focus-visible{transform:translateY(-7px);border-color:var(--accent);box-shadow:0 16px 30px #0005}
-.class-grid>.class-card:focus-visible:before{opacity:1;transform:translate(0,0)}
-@media(hover:hover){.class-grid>.class-card:hover{transform:translateY(-7px);border-color:var(--accent);box-shadow:0 16px 30px #0005}.class-grid>.class-card:hover:before{opacity:1;transform:translate(0,0)}.class-grid>.class-card:hover>strong>span{transform:translateX(5px)}.class-grid>.class-card:hover .class-open{background:var(--accent);border-color:var(--accent);color:#080f1b;transform:translate(2px,-2px)}}
-.class-grid>.class-card:active{transform:translateY(-2px) scale(.98)}
-@media(max-width:720px){.class-grid>.class-card{min-height:182px;padding:22px;border-radius:18px}.class-grid>.class-card>strong>span{font-size:76px}.class-grid>.class-card>strong>em{font-size:24px}.class-open{position:absolute;top:22px;right:18px;width:30px;height:30px;font-size:18px}}
-@media(max-width:360px){.class-grid>.class-card{padding:18px;min-height:165px}.class-grid>.class-card>strong>span{font-size:66px}.class-open{width:29px;height:29px}}
-@media(prefers-reduced-motion:reduce){.class-grid>.class-card,.class-grid>.class-card:before,.class-grid>.class-card>strong>span,.class-open{transition:none!important;transform:none!important}}
+#classes .class-grid>.class-card:focus-visible{transform:translateY(-7px);border-color:var(--accent);box-shadow:0 16px 30px #0005}
+#classes .class-grid>.class-card:focus-visible:before{opacity:1;transform:translate(0,0)}
+@media(hover:hover){#classes .class-grid>.class-card:hover{transform:translateY(-7px);border-color:var(--accent);box-shadow:0 16px 30px #0005}#classes .class-grid>.class-card:hover:before{opacity:1;transform:translate(0,0)}#classes .class-grid>.class-card:hover>strong>span{transform:translateX(5px)}#classes .class-grid>.class-card:hover .class-open{background:var(--accent);border-color:var(--accent);color:#080f1b;transform:translate(2px,-2px)}}
+#classes .class-grid>.class-card:active{transform:translateY(-2px) scale(.98)}
+@media(max-width:720px){#classes .class-grid>.class-card{min-height:182px;padding:22px;border-radius:18px}#classes .class-grid>.class-card>strong>span{font-size:76px}#classes .class-grid>.class-card>strong>em{font-size:24px}.class-open{position:absolute;top:22px;right:18px;width:30px;height:30px;font-size:18px}}
+@media(max-width:360px){#classes .class-grid>.class-card{padding:18px;min-height:165px}#classes .class-grid>.class-card>strong>span{font-size:66px}.class-open{width:29px;height:29px}}
+@media(prefers-reduced-motion:reduce){#classes .class-grid>.class-card,#classes .class-grid>.class-card:before,#classes .class-grid>.class-card>strong>span,.class-open{transition:none!important;transform:none!important}}
+
+/* Chapter cards keep a vertical layout independent of home class cards. */
+.chapter-grid>.chapter-card{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;padding:26px;min-height:240px;align-content:start;overflow:hidden}
+.chapter-grid>.chapter-card>.class-card-top{width:100%;align-items:center;font-size:11px;letter-spacing:1px}
+.chapter-grid>.chapter-card>strong{display:flex;flex-direction:row;align-items:baseline;gap:12px;font-size:17px;font-weight:500;color:var(--muted)}
+.chapter-grid>.chapter-card>strong>span{font-size:48px;font-weight:800;line-height:1;color:var(--text);letter-spacing:-2px}
+.chapter-grid>.chapter-card>.class-card-bottom{font-size:22px;line-height:1.35;font-weight:600;overflow-wrap:anywhere}
+.chapter-grid>.chapter-card>.class-card-bottom small{font-size:13px;font-weight:400;line-height:1.6;margin-top:10px}
+/* Coloured question and answer faces, with independent entrance and flip motion. */
+.study-flip{animation:study-arrive .4s ease-out;transition:transform .25s ease-out}
+.study-flip-inner{transition:transform .6s cubic-bezier(.2,.65,.2,1)}
+.study-face{border-color:color-mix(in srgb,var(--card-accent,#6ee7b7) 45%,#2b3c51);background:radial-gradient(ellipse at top left,color-mix(in srgb,var(--card-accent,#6ee7b7) 15%,transparent),transparent 70%),#101c2c;box-shadow:inset 0 3px 0 color-mix(in srgb,var(--card-accent,#6ee7b7) 70%,transparent);transition:box-shadow .3s}
+.study-front .study-card-prompt{color:var(--text)}
+.study-face small{color:var(--card-accent,#6ee7b7)}
+.study-back{background:radial-gradient(ellipse at top right,color-mix(in srgb,var(--card-accent,#6ee7b7) 23%,transparent),transparent 80%),#0e2029}
+.study-back strong{color:var(--card-accent,#6ee7b7)}
+@media(hover:hover){.study-flip:hover{transform:translateY(-4px)}.study-flip:hover .study-face{box-shadow:inset 0 3px 0 var(--card-accent,#6ee7b7),0 12px 28px #0004}}
+.study-flip:focus-visible{outline-color:var(--card-accent,#6ee7b7)}
+@keyframes study-arrive{from{opacity:0;transform:translateY(12px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.study-flip,.study-flip-inner,.study-face{animation:none!important;transition:none!important}.study-flip:hover{transform:none}}
