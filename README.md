@@ -28,3 +28,7 @@ The Portfolio navigation link and homepage picture open `portfolio.html`, contai
 Preview with `python -m http.server 8767 --bind 127.0.0.1 --directory site`. Run `node scripts/verify-static.cjs` and the browser checks after changing navigation or content. Commit and push to `origin/main` to publish at the root address; `legacy` retains the previous project-site repository. Publishing requires no application build or package installation.
 
 The local `portfolio-reference` and `tmp` folders are excluded from Git. The original teacher test documents remain in their class folders. Student progress is stored only in the student's browser.
+
+## Chapter cards
+
+Navigation is Class card → numerically ordered chapter cards → resource cards for notes, practice and MCQ banks. Each class has its own search, and each chapter shows only its relevant resources. Chapters are grouped by subject and chapter number and sorted by chapter number, so future catalogue additions appear in the correct order automatically. Only prepared chapters are shown; currently Chapter 2 is available in each class.

@@ -27,3 +27,7 @@ Use real buttons and links, visible keyboard focus, labelled search and selects,
 ## Personal branding and navigation update
 
 Use the supplied Shahzad Learning Hub blue and gold logo throughout the published website, generated readers and copied chapter pages. School names and logos are removed from the student website. Keep the existing dark palette and mint action buttons. The homepage contains the hero and class cards only, with a hover and focus tooltip on the portrait linking to a separate portfolio page. Each class opens its own page with class-scoped search and relevant grouped resource sections. Portfolio.html presents all nine supplied portfolio projects with expandable details.
+
+## Chapter cards
+
+Navigation is Class card → numerically ordered chapter cards → resource cards for notes, practice and MCQ banks. Each class has its own search, and each chapter shows only its relevant resources. Chapters are grouped by subject and chapter number and sorted by chapter number, so future catalogue additions appear in the correct order automatically. Only prepared chapters are shown; currently Chapter 2 is available in each class.

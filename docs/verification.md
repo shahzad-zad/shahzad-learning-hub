@@ -31,3 +31,7 @@ Run `node scripts/verify-live.cjs` to verify the current website files and `node
 ## Personal branding and class pages
 
 The personal logo replaces the school crest throughout the website and copied chapter pages. Homepage school attribution, teacher caption, Start here label, global resource library and global search have been removed. Four class links open class-specific sections and search. A separate portfolio presents all nine original projects. The portrait links to the portfolio and reveals About your teacher on hover and keyboard focus, with a visible touch-device label. Browser checks cover all class pages at laptop, tablet, mobile and 320px widths; class-scoped search, bookmarks, empty states, portfolio details, notes and both embedded chapter pages pass. Current site files total 19, with six student resources.
+
+## Chapter cards
+
+Navigation is Class card → numerically ordered chapter cards → resource cards for notes, practice and MCQ banks. Each class has its own search, and each chapter shows only its relevant resources. Chapters are grouped by subject and chapter number and sorted by chapter number, so future catalogue additions appear in the correct order automatically. Only prepared chapters are shown; currently Chapter 2 is available in each class.

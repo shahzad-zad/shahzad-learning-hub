@@ -25,3 +25,7 @@ Example entry:
 For practice entries, the hub automatically links to the embedded viewer. Any HTML file added as a practice resource must work independently at its copied path. For notes, use HTML or PDF to read in the browser. Do not add test-paper files to the published directory.
 
 The generated `site/data/catalog.js` is output; edit the source JSON. The homepage has class links only, and search lives on `class.html`. The generated Class 11 and 12 note readers are extracted from each original `content.js` and will be replaced on sync. Keep permanent chapter-content edits in the original class folder. The hub intentionally includes only the reviewed Chapter 2 materials, not every unrelated draft or assessment in the workspace.
+
+## Chapter cards
+
+Navigation is Class card → numerically ordered chapter cards → resource cards for notes, practice and MCQ banks. Each class has its own search, and each chapter shows only its relevant resources. Chapters are grouped by subject and chapter number and sorted by chapter number, so future catalogue additions appear in the correct order automatically. Only prepared chapters are shown; currently Chapter 2 is available in each class.

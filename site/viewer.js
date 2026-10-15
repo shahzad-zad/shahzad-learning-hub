@@ -6,7 +6,7 @@ else{
  document.title=resource.title+" | Shahzad's Learning Hub";
  document.getElementById('viewer-title').textContent=resource.title;
  document.getElementById('viewer-meta').textContent=`CLASS ${resource.class} · ${resource.subject.toUpperCase()} · CHAPTER ${resource.chapter}`;
- document.getElementById('back-library').href=`class.html?class=${resource.class}`;
+ document.getElementById('back-library').href=`chapter.html?class=${resource.class}&chapter=${resource.chapter}&subject=${encodeURIComponent(resource.subject)}`;
  const direct=document.getElementById('open-separately');direct.href=resource.url;direct.hidden=false;
  frame.title=`Class ${resource.class} ${resource.title}`;frame.hidden=false;
  frame.addEventListener('load',()=>{message.hidden=true;});frame.src=resource.url;

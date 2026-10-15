@@ -30,19 +30,25 @@ const base=process.argv[2]||'http://127.0.0.1:8767/';
    await assert("document.activeElement===document.querySelector('.teacher-picture-link')",size.name+' About your teacher tooltip works on keyboard focus');
    for(const grade of [9,10,11,12]){
      await go('class.html?class='+grade);
-     await assert(`document.querySelectorAll('.resource-card').length===${grade<11?1:2}&&document.getElementById('class-title').textContent==='Class ${grade}'`,size.name+' class '+grade+' contains only its relevant resources');
+     await assert(`document.querySelectorAll('.chapter-card').length===1&&document.querySelectorAll('.resource-card').length===0&&document.getElementById('class-title').textContent==='Class ${grade}'`,size.name+' class '+grade+' opens chapter cards');
      await assert('document.documentElement.scrollWidth<=innerWidth',size.name+' class '+grade+' fits viewport');
      if(grade===11)await shot('class-'+size.name);
+     const href=await evaluate("document.querySelector('.chapter-card').getAttribute('href')");await go(href);
+     await assert(`document.querySelectorAll('.resource-card').length===${grade<11?1:2}&&document.getElementById('class-title').textContent.startsWith('Chapter 2:')`,size.name+' class '+grade+' chapter opens relevant resource cards');
+     await assert('document.documentElement.scrollWidth<=innerWidth',size.name+' chapter '+grade+' fits viewport');
+     if(grade===11)await shot('chapter-'+size.name);
    }
  }
  await go('class.html?class=11');
  await evaluate("document.getElementById('search').value='projectiles';document.getElementById('search').dispatchEvent(new Event('input'))");
- await assert("document.querySelectorAll('.resource-card').length===1&&document.body.textContent.includes('Kinematics Notes')",'search is scoped to selected class');
+ await assert("document.querySelectorAll('.chapter-card').length===1&&document.body.textContent.includes('Kinematics')",'search is scoped to selected class');
  await evaluate("document.getElementById('search').value='zzzznoresource';document.getElementById('search').dispatchEvent(new Event('input'))");
  await assert("!document.getElementById('empty-state').hidden&&document.querySelectorAll('.resource-card').length===0",'class search empty state');
  await evaluate("document.getElementById('empty-reset').click()");
- await assert("document.querySelectorAll('.resource-card').length===2",'clear search keeps selected class');
- await go('class.html?class=12&q=heat');await assert("document.querySelectorAll('.resource-card').length===1",'bookmarked class search restores');
+ await assert("document.querySelectorAll('.chapter-card').length===1",'clear search keeps selected class');
+ await go('class.html?class=12&q=heat');await assert("document.querySelectorAll('.chapter-card').length===1",'bookmarked class search restores');
+ await go('chapter.html?class=11&chapter=2&subject=Physics&q=projectiles');await assert("document.querySelectorAll('.resource-card').length===1",'chapter search filters resource cards');
+ await go('chapter.html?class=11&chapter=99');await assert("document.getElementById('class-search').hidden",'invalid chapter handled');
  await go('class.html?class=invalid');await assert("document.getElementById('class-search').hidden",'invalid class handled');
  await go('portfolio.html');
  await assert("document.querySelectorAll('.portfolio-project').length===9&&document.title.includes('Portfolio')",'separate portfolio contains all 9 original projects');

@@ -13,5 +13,5 @@ const normalise=(buffer,file)=>/\.(html|js|css|json)$/.test(file)?Buffer.from(bu
    if(hash(normalise(remote,file))!==hash(normalise(fs.readFileSync(file),file)))throw Error('Content mismatch: '+relative);
    return relative;
  }));
- console.log(`PASS: ${results.length} live files return HTTP 200 and match the reviewed local site, including all Word downloads, embedded chapters, notes, scripts and images.`);
+ console.log(`PASS: ${results.length} live files return HTTP 200 and match the reviewed local site, including chapter navigation, portfolio, notes, practice pages and images.`);
 })().catch(e=>{console.error(e);process.exitCode=1;});
