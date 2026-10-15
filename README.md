@@ -2,6 +2,10 @@
 
 A student website for Classes 9–12 at The Educators (Daharki Campus), using the existing Educators dark theme and content adapted from Shahzad's local portfolio.
 
+Website: https://shahzad-zad.github.io/shahzad-learning-hub/
+
+Repository: https://github.com/shahzad-zad/shahzad-learning-hub
+
 ## Open locally
 
 Open `site/index.html` directly, or run `python -m http.server 8767 --bind 127.0.0.1 --directory site` from this folder and visit http://127.0.0.1:8767. The website has no package installation or build requirement.

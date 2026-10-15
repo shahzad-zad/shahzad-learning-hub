@@ -10,4 +10,8 @@ Both embedded chapter pages load their logos and respond to Test, Cards and card
 
 Screenshots were inspected for laptop home, laptop library, mobile home and mobile embedded practice. Internal screenshots and browser logs are retained under `tmp/browser-qa`, excluded from Git. Automated validation is available in `scripts/verify-static.cjs` and `scripts/browser-qa.cjs`.
 
-Live GitHub Pages publication is a separate check and requires an authenticated GitHub account. A successful local preview does not establish a live deployment.
+## Live publication
+
+Published on 15 October 2026 at https://shahzad-zad.github.io/shahzad-learning-hub/ from https://github.com/shahzad-zad/shahzad-learning-hub. GitHub Actions deployment run 38695950993 completed successfully. All 21 published files returned HTTP 200 and matched the reviewed local files, comparing text with normalised line endings and binary files byte for byte. This includes all four Word downloads, both complete embedded chapters and both full note readers.
+
+The browser checks above were also repeated successfully against the live GitHub Pages repository subpath, including all four viewport sizes and embedded card interactions. `node scripts/verify-live.cjs` verifies the deployed file contents, and `node scripts/browser-qa.cjs https://shahzad-zad.github.io/shahzad-learning-hub/` repeats the live interaction checks. No further site changes were needed after these checks.

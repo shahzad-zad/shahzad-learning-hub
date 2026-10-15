@@ -1,6 +1,6 @@
 # Publish on GitHub Pages
 
-The prepared repository name is `shahzad-learning-hub`. This project has a static `site` folder and an Actions workflow. It uses relative URLs so it works at https://YOUR-USERNAME.github.io/shahzad-learning-hub/ as well as a custom domain.
+The repository is https://github.com/shahzad-zad/shahzad-learning-hub and the live site is https://shahzad-zad.github.io/shahzad-learning-hub/. This project has a static `site` folder and an Actions workflow. It uses relative URLs so it also works with a custom domain. First publication was completed on 15 October 2026; the first-publication instructions below are retained for a new account or a separate copy.
 
 ## First publication
 

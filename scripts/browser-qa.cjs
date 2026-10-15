@@ -3,6 +3,7 @@ const root=path.resolve(__dirname,'..'),out=path.join(root,'tmp/browser-qa');fs.
 const profile=path.join(out,'chrome-'+Date.now());
 const chrome=spawn('C:/Program Files/Google/Chrome/Application/chrome.exe',['--headless','--disable-gpu','--no-first-run','--no-default-browser-check','--remote-debugging-port=0','--user-data-dir='+profile,'about:blank'],{windowsHide:true,stdio:'ignore'});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const base=process.argv[2]||'http://127.0.0.1:8767/';
 (async()=>{let ws;const log=[];try{
  const portFile=path.join(profile,'DevToolsActivePort');for(let i=0;i<100&&!fs.existsSync(portFile);i++)await sleep(100);
  const port=fs.readFileSync(portFile,'utf8').split('\n')[0];
@@ -13,7 +14,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  const send=(method,params={})=>new Promise((resolve,reject)=>{const n=++id;pending.set(n,{resolve,reject});ws.send(JSON.stringify({id:n,method,params}));});
  const evaluate=async expression=>{const result=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(result.exceptionDetails)throw Error(result.exceptionDetails.exception?.description||'Evaluation failed');return result.result.value;};
  const wait=async expression=>{for(let i=0;i<150;i++){if(await evaluate(expression))return;await sleep(40);}throw Error('Timed out: '+expression);};
- const go=async relative=>{await send('Page.navigate',{url:'http://127.0.0.1:8767/'+relative});await wait("document.readyState==='complete'");await sleep(120);};
+ const go=async relative=>{await send('Page.navigate',{url:new URL(relative,base).href});await wait("document.readyState==='complete'");await sleep(120);};
  const assert=async(expression,label)=>{if(!await evaluate(expression))throw Error(label);log.push('PASS: '+label);};
  const shot=async name=>{const r=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});fs.writeFileSync(path.join(out,name+'.png'),Buffer.from(r.data,'base64'));};
  await send('Page.enable');await send('Runtime.enable');
