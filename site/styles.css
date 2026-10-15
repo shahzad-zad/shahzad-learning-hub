@@ -34,6 +34,6 @@
 .class-grid>.class-card:focus-visible:before{opacity:1;transform:translate(0,0)}
 @media(hover:hover){.class-grid>.class-card:hover{transform:translateY(-7px);border-color:var(--accent);box-shadow:0 16px 30px #0005}.class-grid>.class-card:hover:before{opacity:1;transform:translate(0,0)}.class-grid>.class-card:hover>strong>span{transform:translateX(5px)}.class-grid>.class-card:hover .class-open{background:var(--accent);border-color:var(--accent);color:#080f1b;transform:translate(2px,-2px)}}
 .class-grid>.class-card:active{transform:translateY(-2px) scale(.98)}
-@media(max-width:720px){.class-grid>.class-card{min-height:182px;padding:22px;border-radius:18px}.class-grid>.class-card>strong>span{font-size:76px}.class-grid>.class-card>strong>em{font-size:24px}.class-open{width:34px;height:34px;font-size:18px}}
+@media(max-width:720px){.class-grid>.class-card{min-height:182px;padding:22px;border-radius:18px}.class-grid>.class-card>strong>span{font-size:76px}.class-grid>.class-card>strong>em{font-size:24px}.class-open{position:absolute;top:22px;right:18px;width:30px;height:30px;font-size:18px}}
 @media(max-width:360px){.class-grid>.class-card{padding:18px;min-height:165px}.class-grid>.class-card>strong>span{font-size:66px}.class-open{width:29px;height:29px}}
 @media(prefers-reduced-motion:reduce){.class-grid>.class-card,.class-grid>.class-card:before,.class-grid>.class-card>strong>span,.class-open{transition:none!important;transform:none!important}}
