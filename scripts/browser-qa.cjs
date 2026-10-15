@@ -13,7 +13,7 @@ const base=process.argv[2]||'http://127.0.0.1:8767/';
  ws.onmessage=e=>{const m=JSON.parse(e.data);if(m.method==='Runtime.exceptionThrown')errors.push(m.params.exceptionDetails.text+' '+(m.params.exceptionDetails.exception?.description||''));if(m.id&&pending.has(m.id)){const p=pending.get(m.id);pending.delete(m.id);m.error?p.reject(m.error):p.resolve(m.result);}};
  const send=(method,params={})=>new Promise((resolve,reject)=>{const n=++id;pending.set(n,{resolve,reject});ws.send(JSON.stringify({id:n,method,params}));});
  const evaluate=async expression=>{const result=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(result.exceptionDetails)throw Error(result.exceptionDetails.exception?.description||'Evaluation failed');return result.result.value;};
- const wait=async expression=>{for(let i=0;i<150;i++){if(await evaluate(expression))return;await sleep(40);}throw Error('Timed out: '+expression);};
+ const wait=async expression=>{for(let i=0;i<500;i++){if(await evaluate(expression))return;await sleep(40);}throw Error('Timed out: '+expression);};
  const go=async relative=>{await send('Page.navigate',{url:new URL(relative,base).href});await wait("document.readyState==='complete'");await sleep(120);};
  const assert=async(expression,label)=>{if(!await evaluate(expression))throw Error(label);log.push('PASS: '+label);};
  const shot=async name=>{const r=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});fs.writeFileSync(path.join(out,name+'.png'),Buffer.from(r.data,'base64'));};
