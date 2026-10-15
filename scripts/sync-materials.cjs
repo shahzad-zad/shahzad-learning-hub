@@ -8,7 +8,7 @@ const publicContent = JSON.parse(fs.readFileSync(path.join(portfolio,'data/site-
 copy(path.join(portfolio,'data/site-content.json'),'portfolio-reference/data/site-content.json');
 for (const file of ['src/components/home-client.tsx','src/app/globals.css','src/app/page.tsx','package.json','README.md']) copy(path.join(portfolio,file),'portfolio-reference/'+file);
 copy('F:/My Portfolio/future is here.png','site/assets/shahzad-header.png');
-copy(path.join(workspace,'Educators-Master/assets/Shahzad-logo.png'),'site/assets/logo.png');
+copy(path.join(workspace,'Educators-Master/assets/new-logo.png'),'site/assets/new-logo.png');
 const profile = {bio:publicContent.site.bio,email:publicContent.site.email,linkedin:publicContent.site.linkedin,
  projects:publicContent.projects.slice(0,3).map(({title,summary,tag})=>({title,summary,tag}))};
 write('site/data/profile.json',JSON.stringify(profile,null,2));
@@ -44,3 +44,5 @@ write('portfolio-reference/README.md',"# Portfolio reference copy\n\nCopied from
 console.log(`Synced ${resources.length} resources, 32 notes sections, two chapter pages, two MCQ banks and portfolio profile content.`);
 
 require('./build-portfolio.cjs');
+
+require('./build-study.cjs');

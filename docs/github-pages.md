@@ -1,6 +1,6 @@
 # Publish on GitHub Pages
 
-The repository is https://github.com/shahzad-zad/shahzad-zad.github.io and the live site is https://shahzad-zad.github.io/. This project has a static `site` folder and an Actions workflow. It uses relative URLs so it also works with a custom domain. Publication was completed on 15 October 2026; the first-publication instructions below are retained for a new account or a separate copy.
+The repository is https://github.com/shahzadgullabbhatti/shahzadgullabbhatti.github.io and the live site is https://shahzadgullabbhatti.github.io/. This project has a static `site` folder and an Actions workflow. It uses relative URLs so it also works with a custom domain. Publication was completed on 15 October 2026; the first-publication instructions below are retained for a new account or a separate copy.
 
 ## First publication
 

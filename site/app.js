@@ -3,13 +3,13 @@ const $=id=>document.getElementById(id),resources=window.LEARNING_HUB.resources;
 const params=new URLSearchParams(location.search),grade=Number(params.get('class'));
 const chapterView=document.body.dataset.view==='chapter',chapter=Number(params.get('chapter')),subject=params.get('subject')||'Physics';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const kinds={notes:'Notes',practice:'Practice',bank:'MCQ bank'};
+const kinds={notes:'Notes',cards:'Cards',mcqs:'MCQs'};
 const allItems=resources.filter(r=>r.class===grade);
 const items=chapterView?allItems.filter(r=>r.chapter===chapter&&r.subject===subject):allItems;
 const groups=new Map();
 allItems.forEach(r=>{const key=r.subject+'|'+r.chapter;if(!groups.has(key))groups.set(key,{chapter:r.chapter,subject:r.subject,items:[]});groups.get(key).items.push(r);});
 const chapters=[...groups.values()].sort((a,b)=>a.chapter-b.chapter||a.subject.localeCompare(b.subject));
-const chapterName=g=>(g.items.find(r=>r.type==='notes')||g.items[0]).title.replace(/\s+(?:Notes|Practice|MCQ Bank)$/,'');
+const chapterName=g=>(g.items.find(r=>r.type==='notes')||g.items[0]).title.replace(/\s+(?:Notes|Cards|MCQs|Practice|MCQ Bank)$/,'');
 if(![9,10,11,12].includes(grade)||(chapterView&&!items.length)){
  $('class-title').textContent=chapterView?'Chapter unavailable':'Choose a class';$('class-intro').textContent='Return to Classes to choose an available chapter.';$('class-search').hidden=true;
 }else{
@@ -24,10 +24,10 @@ if(![9,10,11,12].includes(grade)||(chapterView&&!items.length)){
   const query=$('search').value.trim().toLowerCase();
   const matches=r=>`${r.title} ${r.subject} chapter ${r.chapter} ${r.description} ${r.detail}`.toLowerCase().includes(query);
   if(chapterView){
-   const filtered=items.filter(matches).sort((a,b)=>['notes','practice','bank'].indexOf(a.type)-['notes','practice','bank'].indexOf(b.type));
+   const filtered=items.filter(matches).sort((a,b)=>['notes','cards','mcqs'].indexOf(a.type)-['notes','cards','mcqs'].indexOf(b.type));
    $('class-sections').innerHTML=`<div class="resource-grid chapter-resources">${filtered.map(r=>{
     const href=r.type==='practice'?`viewer.html?resource=${encodeURIComponent(r.id)}`:r.url;
-    return `<article class="resource-card"><div class="resource-meta"><span>${kinds[r.type]}</span></div><h2>${esc(r.title)}</h2><p>${esc(r.description)}</p><div class="resource-bottom"><span>${esc(r.detail)}</span><a href="${esc(href)}">${r.type==='notes'?'Read notes':r.type==='practice'?'Open practice':'Open bank'} ↗</a></div></article>`;
+    return `<article class="resource-card"><div class="resource-meta"><span>${kinds[r.type]}</span></div><h2>${esc(r.title)}</h2><p>${esc(r.description)}</p><div class="resource-bottom"><span>${esc(r.detail)}</span><a href="${esc(href)}">${r.type==='notes'?'Read notes':r.type==='cards'?'Open cards':'Practise MCQs'} ↗</a></div></article>`;
    }).join('')}</div>`;
    $('empty-state').hidden=filtered.length>0;$('resource-count').textContent=`${filtered.length} resource${filtered.length===1?'':'s'}`;
   }else{

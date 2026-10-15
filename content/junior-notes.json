@@ -1,0 +1,134 @@
+{
+  "9": [
+    {
+      "title": "Rest, motion and reference frames",
+      "html": "<p>Kinematics describes motion without investigating its causes. An object is at rest when its position stays unchanged relative to a chosen reference point. It is in motion when its position changes relative to that reference point with time. Always identify the reference frame before describing motion.</p><p>A passenger sitting in a moving bus is at rest relative to the seat but moving relative to a roadside tree. These descriptions are consistent because they use different reference points. A reference point may itself be moving.</p><p><strong>Check:</strong> Two passengers sitting beside each other have zero relative velocity if their separation and direction remain unchanged, even though the bus is moving along the road.</p>"
+    },
+    {
+      "title": "Translatory motion: linear, circular and random",
+      "html": "<p>In translatory motion a body moves from one place to another. Linear motion follows a straight path, such as a train along a straight track. Circular motion follows a circular path, such as a stone moving around a hand at the end of a string. Random motion follows an irregular path with changing directions, such as a butterfly's flight.</p><p>Classify the path and specify the object being observed. A body can have more than one type of motion at the same time: a rolling wheel moves along the road while also turning about its axle.</p><p><strong>Distinction:</strong> Circular motion around an external centre differs from the rotation of a body about its own axis.</p>"
+    },
+    {
+      "title": "Rotatory and vibratory motion",
+      "html": "<p>Rotatory motion occurs when a body turns about an axis. A ceiling fan rotates about its fixed central axis; points on its blades travel in circles. Vibratory motion is repeated to-and-fro motion about a mean position. A pendulum and a vibrating tuning fork provide examples.</p><p>In a pendulum's vibration, its direction repeatedly reverses. The pendulum can have zero speed momentarily at an extreme position without being permanently at rest. To describe a combination of motions, state each part separately rather than forcing the object into only one category.</p><p><strong>Recall:</strong> A spinning fan is rotatory; an oscillating pendulum is vibratory; irregular insect flight is random.</p>"
+    },
+    {
+      "title": "Distance and displacement",
+      "html": "<p>Distance is the total length of the path travelled. It is a scalar and has no direction. Displacement is the vector from the initial position to the final position, independent of the route taken. Both are measured in metres in SI. The magnitude of displacement cannot exceed the distance travelled.</p><div class=\"formula\">Distance = sum of path lengths<br>Displacement = final position − initial position</div><p><strong>Example:</strong> Walking 24 m east and 7 m west gives distance 24 + 7 = 31 m. With east positive, displacement is 24 − 7 = 17 m east. After one complete lap, displacement is zero although the distance is the track circumference.</p>"
+    },
+    {
+      "title": "Scalars, vectors and arrow representation",
+      "html": "<p>A scalar is specified by magnitude and unit. Examples include mass, time, temperature, distance and speed. A vector requires magnitude and direction; examples include displacement, velocity, acceleration and force.</p><p>Draw a vector as an arrow. Its length represents magnitude according to a selected scale, and its arrowhead shows direction. At a scale of 1 cm to 2 m, a displacement of 6 m east is represented by a 3 cm arrow pointing east. Changing the drawing scale does not change the actual displacement.</p><p><strong>Check:</strong> A negative sign may indicate direction along a selected axis, but merely having a sign does not make every quantity a vector.</p>"
+    },
+    {
+      "title": "Speed and average speed",
+      "html": "<p>Speed describes how quickly distance is covered. Uniform speed means equal distances are travelled in equal time intervals. For a journey with changing speed, calculate average speed using the entire distance and entire elapsed time, including any stated stops.</p><div class=\"formula\">Average speed = total distance / total time<br>SI unit: m/s</div><p><strong>Example:</strong> A cyclist covers 90 m in 15 s and 60 m in 10 s. Average speed = (90 + 60)/(15 + 10) = 6 m/s.</p><p>Do not automatically average two speeds. Their arithmetic mean applies when the time spent at each speed is equal. For equal distances at 10 m/s and 20 m/s, the average is 13.3 m/s.</p>"
+    },
+    {
+      "title": "Velocity and changes of direction",
+      "html": "<p>Velocity specifies the rate of change of displacement and its direction. Average velocity equals net displacement divided by the elapsed time. Constant velocity requires both constant speed and constant direction. A car turning around a circle changes velocity even if its speed stays constant.</p><div class=\"formula\">Average velocity = displacement / time interval</div><p><strong>Example:</strong> A runner completes a 200 m lap in 40 s. Average speed = 200/40 = 5 m/s, but average velocity is zero because the runner returns to the starting point.</p><p>Instantaneous speed or velocity describes motion at a particular instant. An average describes an interval and need not equal the value at every instant.</p>"
+    },
+    {
+      "title": "Units and speed conversions",
+      "html": "<p>Use compatible units before substituting into an equation. The SI units of distance, time, velocity and acceleration are m, s, m/s and m/s². Convert kilometres to metres and hours to seconds when working with SI acceleration.</p><div class=\"formula\">1 km = 1,000 m<br>1 h = 3,600 s<br>1 km/h = 5/18 m/s<br>1 m/s = 3.6 km/h</div><p><strong>Example:</strong> 72 km/h = 72 × 5/18 = 20 m/s. A speed of 8 m/s maintained for 5 s covers 8 × 5 = 40 m.</p><p><strong>Unit check:</strong> (m/s) × s gives m; (m/s)/s gives m/s². A result with the wrong unit indicates an incorrect calculation or interpretation.</p>"
+    },
+    {
+      "title": "Acceleration and uniform acceleration",
+      "html": "<p>Acceleration is the change in velocity per unit time. Uniform acceleration means equal changes in velocity occur in equal time intervals. It can result from changing speed, changing direction, or both. If velocity is constant, acceleration is zero.</p><div class=\"formula\">a = (v − u)/t</div><p>Here u is initial velocity, v final velocity and t the elapsed time. A velocity increase from 4 m/s to 10 m/s in 3 s gives a = (10 − 4)/3 = 2 m/s².</p><p>The equation gives average acceleration over the interval. It also describes the acceleration throughout the interval if acceleration is constant.</p>"
+    },
+    {
+      "title": "Signs of velocity and acceleration",
+      "html": "<p>Choose a positive direction before using signed quantities. A negative velocity means motion opposite to that direction. A negative acceleration points in the negative direction; it does not always mean the object is slowing down.</p><p><strong>Slowing:</strong> With east positive, changing from +18 m/s to +6 m/s in 4 s gives a = −3 m/s². Velocity and acceleration are opposite, so speed decreases.</p><p><strong>Speeding up:</strong> Changing from −4 m/s to −10 m/s in 3 s gives a = −2 m/s². The speed increases from 4 to 10 m/s because velocity and acceleration point in the same direction.</p><p>Use the magnitude of velocity when comparing speeds.</p>"
+    },
+    {
+      "title": "Reading distance–time graphs",
+      "html": "<p>Place time on the horizontal axis and distance on the vertical axis. The gradient gives speed: change in distance divided by change in time. A steeper rising line represents a greater speed. A straight rising line represents uniform speed; a horizontal line means the distance is unchanged and the object is at rest.</p><div class=\"formula\">Speed = gradient = Δdistance/Δtime</div><p><strong>Example:</strong> A line rises from 10 m at 2 s to 50 m at 10 s. Speed = (50 − 10)/(10 − 2) = 5 m/s.</p><p>Use two points on the line and subtract both coordinates. Do not divide the final distance by the final time unless the graph starts at the origin.</p>"
+    },
+    {
+      "title": "Speed–time graphs: gradients and areas",
+      "html": "<p>On a speed–time graph, the gradient gives the rate of change of speed. For straight-line motion without direction reversal, it can represent acceleration with the chosen direction convention. A horizontal line indicates constant speed. An upward gradient indicates increasing speed and a downward gradient decreasing speed.</p><p>The area under a speed–time graph gives distance travelled. A rectangle has area speed × time. A triangle has area ½ × base × height. Add areas for a journey with several stages.</p><p><strong>Example:</strong> Speed rises uniformly from 0 to 12 m/s in 6 s. Distance = ½ × 6 × 12 = 36 m. Gradient = 12/6 = 2 m/s².</p>"
+    },
+    {
+      "title": "The three equations of uniformly accelerated motion",
+      "html": "<p>The standard equations apply when acceleration is constant over the interval. Use a consistent positive direction. The symbol s represents displacement; when the body continues in one direction, its magnitude equals the distance travelled.</p><div class=\"formula\">v = u + at<br>s = ut + ½at²<br>v² = u² + 2as</div><p>The first equation follows from a = (v − u)/t. Under constant acceleration, average velocity is (u + v)/2. Multiplying by time gives s = ½(u + v)t, from which the second and third forms follow.</p><p>Select the equation containing the known quantities and the required unknown. Do not assume constant acceleration merely because a journey is described by one time interval.</p>"
+    },
+    {
+      "title": "Worked acceleration and braking problems",
+      "html": "<p><strong>Acceleration:</strong> For u = 5 m/s, a = 2 m/s² and t = 4 s, final velocity v = 5 + 2 × 4 = 13 m/s. Displacement s = 5 × 4 + ½ × 2 × 4² = 36 m.</p><p><strong>Braking:</strong> A car moving at 20 m/s brakes uniformly at 5 m/s². Take forward as positive, so a = −5 m/s² and v = 0. Time to stop is (0 − 20)/(−5) = 4 s. From v² = u² + 2as, stopping distance is 40 m.</p><p><strong>Method:</strong> List the data, convert units, choose signs, substitute into a suitable equation and check the result physically. A negative stopping time usually means the acceleration sign was used incorrectly.</p>"
+    },
+    {
+      "title": "Free fall and acceleration due to gravity",
+      "html": "<p>Free fall is motion under gravity alone, with air resistance neglected. Near Earth's surface the gravitational acceleration is approximately 9.8 m/s². Some school problems use 10 m/s²; use the value stated in the question. Objects in the same gravitational field have the same free-fall acceleration when air resistance is negligible.</p><p>For downward motion with downward chosen positive, a = +g. If upward is chosen positive, a = −g. The physical direction of gravity remains downward in either convention.</p><p><strong>Example:</strong> A stone released from rest for 3 s, using g = 10 m/s², has downward speed gt = 30 m/s and falls ½gt² = 45 m.</p>"
+    },
+    {
+      "title": "Vertical upward motion and final checks",
+      "html": "<p>A ball thrown upward slows because its upward velocity and downward acceleration are opposite. At the highest point its velocity is momentarily zero, but its acceleration remains downward. It then falls back with increasing downward speed. Neglecting air resistance, it returns to the launch height with the same speed magnitude.</p><p><strong>Example:</strong> With upward positive, u = 20 m/s and g = 10 m/s². At the top, 0 = 20 − 10t, giving t = 2 s. From 0 = 20² − 2 × 10 × h, maximum height is 20 m. Return time to the same height is 4 s.</p><p>Check the chosen direction, gravitational value, constant-acceleration assumption, units, and whether the question asks for distance or displacement.</p>"
+    }
+  ],
+  "10": [
+    {
+      "title": "Production of sound",
+      "html": "<p>Sound is produced by a vibrating source. A tuning fork's prongs, a drum membrane or a loudspeaker cone move to and fro and set nearby particles of the medium into vibration. The disturbance then transfers energy through the medium.</p><p>Particles oscillate about their mean positions; they do not all travel permanently from the source to the listener. A vibrating source alone does not guarantee that a distant listener hears it: a transmitting medium and a suitable audible frequency and intensity are also needed.</p><p><strong>Example:</strong> Touching a gently vibrating tuning fork can show its vibration. The vibration of a nearby surface can also transfer sound energy to air.</p>"
+    },
+    {
+      "title": "Longitudinal sound waves",
+      "html": "<p>Sound in air is a longitudinal mechanical wave. Mechanical means it requires a material medium. Longitudinal means the particles vibrate parallel to the direction in which the wave travels. A sequence of compressions and rarefactions moves away from the source.</p><p>The disturbance transfers energy even though individual air particles make small back-and-forth movements rather than following the wave over a large distance. A wave diagram drawn as a curve may show pressure or displacement variation; the drawing does not mean that air particles move up and down as in a transverse wave.</p><p><strong>Recall:</strong> Sound in air is longitudinal; light is an electromagnetic wave and can travel through vacuum.</p>"
+    },
+    {
+      "title": "Compressions, rarefactions and wavelength",
+      "html": "<p>A compression is a region where particles are closer together and pressure and density are higher than in the neighbouring undisturbed medium. A rarefaction is a region where particles are farther apart, with lower pressure and density. A rarefaction still contains particles; it is not a vacuum.</p><p>One wavelength is the distance between consecutive compressions or between consecutive rarefactions. These positions correspond to the same stage of vibration. The distance from a compression to its neighbouring rarefaction is half a wavelength.</p><p>As a source vibrates, it alternately pushes and releases the nearby medium, creating the repeating pattern. Wavelength is measured in metres.</p>"
+    },
+    {
+      "title": "Why sound needs a medium",
+      "html": "<p>Sound travels through gases, liquids and solids because their particles can transfer mechanical disturbances. It cannot travel through a vacuum. In the bell-jar demonstration, a ringing electric bell becomes harder to hear as air is removed, even though the bell is still seen vibrating.</p><p>The demonstration distinguishes mechanical sound from light: light from the bell can still reach the observer through the evacuated space. In an actual apparatus, some vibration may also pass through solid supports, so a faint residual sound does not disprove the need for a medium.</p><p><strong>Check:</strong> Removing air reduces transmission; it does not change sound into light or remove gravity.</p>"
+    },
+    {
+      "title": "Frequency, period and wave speed",
+      "html": "<p>Frequency f is the number of complete vibrations per second, measured in hertz. Period T is the time for one complete vibration, measured in seconds. Sound travels one wavelength λ during one period.</p><div class=\"formula\">f = 1/T<br>v = λ/T = fλ</div><p><strong>Example:</strong> A period of 0.002 s gives f = 500 Hz. If wavelength is 0.68 m, speed is 500 × 0.68 = 340 m/s.</p><p>In the same medium under unchanged conditions, speed is approximately fixed. Doubling frequency therefore halves wavelength. Do not confuse frequency, which is set by the source, with the speed determined by the medium and its conditions.</p>"
+    },
+    {
+      "title": "Speed of sound in different media",
+      "html": "<p>The speed of sound depends on the medium's elastic and inertial properties. For the representative examples in the chapter, sound travels fastest in steel, more slowly in water and slowest in air. This is a useful comparison for those materials, rather than a universal rule based only on whether matter is solid, liquid or gas.</p><p>Sound speed in air is often taken as about 340 m/s for school calculations. It varies with temperature and other conditions. Water problems may specify 1,500 m/s. Always use the value stated in the question.</p><p>Changing a source's loudness or frequency does not by itself greatly change the propagation speed in the same ordinary medium.</p>"
+    },
+    {
+      "title": "Measuring sound speed directly",
+      "html": "<p>Measure the distance between a sound source and an observer. The observer uses a visible event, such as a clap, as the start and the arrival of its sound as the end. Light travels much faster than sound, so its travel time over ordinary classroom distances is negligible.</p><div class=\"formula\">Sound speed = distance / sound travel time</div><p><strong>Example:</strong> Sound covers 170 m in 0.50 s, giving v = 170/0.50 = 340 m/s.</p><p>A longer separation makes the sound delay easier to measure, reducing the relative influence of reaction-time uncertainty. Repeat measurements where possible. This method uses a one-way path, so do not multiply the distance by two.</p>"
+    },
+    {
+      "title": "Temperature and humidity",
+      "html": "<p>For air of fixed composition, sound speed increases as temperature rises. The chapter models the dependence using the square root of absolute temperature. When applying this relation, temperatures must be in kelvin, not degrees Celsius.</p><div class=\"formula\">v₂/v₁ = √(T₂/T₁)<br>T in kelvin = temperature in °C + 273 approximately</div><p>If absolute temperature becomes four times as large under the model's assumptions, sound speed doubles. At the same temperature, more humid air generally transmits sound slightly faster because its composition changes.</p><p>Do not assume speed is directly proportional to Celsius temperature, or apply an air-temperature formula to water without justification.</p>"
+    },
+    {
+      "title": "Pitch and frequency",
+      "html": "<p>Pitch distinguishes high and low sounds and is mainly determined by frequency. A larger frequency produces a higher pitch. Loudness and pitch are different: increasing vibration amplitude can make a sound louder without raising its frequency.</p><p>On oscilloscope traces using the same time scale, the wave with more complete cycles in a given interval has greater frequency and hence higher pitch. If trace A shows eight cycles and trace B four during the same interval, A has twice B's frequency.</p><p><strong>Check:</strong> Compare the time scale before comparing cycle counts. Traces with different time scales cannot be compared by appearance alone.</p>"
+    },
+    {
+      "title": "Loudness and sound intensity",
+      "html": "<p>Loudness is the listener's perception of how strong a sound is. Under the same listening conditions, a greater vibration amplitude generally produces a louder sound. Sound intensity is an objective physical quantity: sound power transferred per unit area normal to propagation.</p><div class=\"formula\">I = P/A<br>SI unit of intensity: W/m²</div><p><strong>Example:</strong> If 0.60 W passes through 3.0 m², intensity is 0.60/3.0 = 0.20 W/m². Loudness level is commonly expressed in decibels.</p><p>Keep amplitude, frequency and wave speed distinct. A large amplitude does not necessarily mean a high-pitched sound, and equal intensity does not guarantee identical perceived loudness at different frequencies.</p>"
+    },
+    {
+      "title": "Quality or timbre and waveforms",
+      "html": "<p>Quality, also called timbre, allows us to distinguish sounds from different instruments even when they have the same pitch and similar loudness. Different sources produce different waveforms and mixtures of overtones.</p><p>A violin and another instrument can play the same note, so their fundamental frequencies are the same, while the shapes of their waveforms differ. An oscilloscope can display these differences. Frequency determines the repetition rate; amplitude relates to signal strength; waveform shape helps distinguish quality.</p><p><strong>Check:</strong> If two traces have the same repetition rate and amplitude but different shapes, their timbre differs rather than their pitch necessarily differing.</p>"
+    },
+    {
+      "title": "Noise, musical sound and noise control",
+      "html": "<p>Noise is unwanted sound. The same sound can be welcome in one situation and disturbing in another. Musical sounds often involve regular repeating vibrations, whereas many noises have irregular waveforms. Whether a sound is unwanted also depends on the listener and circumstances.</p><p>Traffic, horns, machinery and loudspeakers can contribute to noise pollution. Reduce noise at the source through maintenance and quieter operation, along its path through suitable barriers and insulation, or by increasing separation where practical.</p><p>Prolonged excessive noise can interfere with communication and concentration and can damage hearing. A sound is not safe merely because it is musical or pleasant.</p>"
+    },
+    {
+      "title": "Reflection, echoes and minimum distance",
+      "html": "<p>An echo is reflected sound heard separately from the original sound after a sufficient delay. A reflecting wall or other large surface sends sound back to the listener. The measured delay includes both the outward and return journeys.</p><div class=\"formula\">Reflector distance d = vt/2</div><p><strong>Example:</strong> An echo returning after 0.40 s at 340 m/s comes from a surface 340 × 0.40/2 = 68 m away. If a separate echo requires at least 0.10 s delay, the minimum wall distance at 340 m/s is 17 m.</p><p>For a wall 51 m away, the round trip is 102 m and echo time is 102/340 = 0.30 s.</p>"
+    },
+    {
+      "title": "Audible sound, infrasound and ultrasound",
+      "html": "<p>The conventional audible range for a young person with normal hearing is approximately 20 Hz to 20,000 Hz. Actual hearing varies between people and with age. Sound below 20 Hz is called infrasound; sound above 20,000 Hz is ultrasound.</p><p>These classifications depend on frequency, not amplitude. Making ultrasound louder does not bring its frequency into the ordinary human audible range. Different animals have different hearing ranges; bats can use ultrasonic sound in locating prey.</p><p><strong>Example:</strong> At v = 340 m/s and λ = 0.0085 m, frequency is v/λ = 40,000 Hz. This is ultrasound. For MHz values, convert 1 MHz to 1,000,000 Hz before using v = fλ.</p>"
+    },
+    {
+      "title": "SONAR and industrial ultrasound",
+      "html": "<p>SONAR uses transmitted sound pulses and returning echoes to locate underwater objects or measure water depth. Measure the round-trip time and use the sound speed in water; divide by two to obtain the one-way distance.</p><p><strong>Example:</strong> A seabed echo returns after 0.20 s at 1,500 m/s. Depth = 1,500 × 0.20/2 = 150 m. Depths corresponding to 0.12 s and 0.20 s are 90 m and 150 m, a difference of 60 m.</p><p>Industrially, reflected ultrasound can reveal internal cracks or flaws in a solid block. Ultrasound in a cleaning liquid also helps detach dirt from small or inaccessible spaces. These applications use mechanical vibrations and reflection.</p>"
+    },
+    {
+      "title": "Medical ultrasound and solving chapter problems",
+      "html": "<p>Ultrasonography forms images using echoes from tissue boundaries. A transducer sends and receives ultrasonic pulses. Their travel times and the assumed speed in tissue help locate reflecting structures. Echocardiography uses ultrasound to form images of the heart and its valves.</p><p><strong>Example:</strong> At 1,540 m/s, an echo time of 0.00010 s corresponds to depth 1,540 × 0.00010/2 = 0.077 m = 7.7 cm.</p><p><strong>Problem method:</strong> Decide whether the path is one-way or a round trip, convert frequency and time units, choose v = fλ or d = vt as appropriate, and check units. An echo or SONAR depth uses vt/2; a direct sound journey uses vt. Explain the physical reason for the factor of two.</p>"
+    }
+  ]
+}
