@@ -1,0 +1,6 @@
+portfolio-reference/
+tmp/
+__pycache__/
+*.zip
+.env*
+publication.json

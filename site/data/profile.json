@@ -1,0 +1,22 @@
+{
+  "bio": "I'm Shahzad — a materials scientist applying machine learning to materials discovery, from crystal structure prediction to controllable carbon nanotube synthesis.",
+  "email": "shahzadgullabbhatti@gmail.com",
+  "linkedin": "linkedin.com/in/shahzadgullabbhatti",
+  "projects": [
+    {
+      "title": "Physics-Constrained ML for CNT Chirality Prediction",
+      "summary": "Latent-structure models for controllable CNT chirality prediction.",
+      "tag": "Scientific ML"
+    },
+    {
+      "title": "Master's Thesis: CNT Synthesis Optimization",
+      "summary": "Optimising reactor parameters for controllable CNT structure and performance.",
+      "tag": "Aerosol CVD"
+    },
+    {
+      "title": "Hydrogen and Injector Depth Effects in Aerosol CVD",
+      "summary": "COMSOL study of hydrogen fraction and injector depth in CNT growth.",
+      "tag": "CFD Modelling"
+    }
+  ]
+}
