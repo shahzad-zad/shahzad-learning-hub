@@ -14,4 +14,10 @@ Screenshots were inspected for laptop home, laptop library, mobile home and mobi
 
 Published on 15 October 2026 at https://shahzad-zad.github.io/shahzad-learning-hub/ from https://github.com/shahzad-zad/shahzad-learning-hub. GitHub Actions deployment run 38695950993 completed successfully. All 21 published files returned HTTP 200 and matched the reviewed local files, comparing text with normalised line endings and binary files byte for byte. This includes all four Word downloads, both complete embedded chapters and both full note readers.
 
-The browser checks above were also repeated successfully against the live GitHub Pages repository subpath, including all four viewport sizes and embedded card interactions. `node scripts/verify-live.cjs` verifies the deployed file contents, and `node scripts/browser-qa.cjs https://shahzad-zad.github.io/shahzad-learning-hub/` repeats the live interaction checks. No further site changes were needed after these checks.
+The browser checks above were also repeated successfully against the live GitHub Pages repository subpath, including all four viewport sizes and embedded card interactions. No further site changes were needed after these checks.
+
+## Short website address
+
+On 15 October 2026, the same website was published at https://shahzad-zad.github.io/ from the new repository https://github.com/shahzad-zad/shahzad-zad.github.io. GitHub Actions deployment run 38699788223 completed successfully. All browser interaction checks were repeated successfully at this root address, including laptop, tablet, mobile, note readers, banks and both embedded chapter pages. Future updates push to the new repository through the `origin` remote; the previous project repository is retained as `legacy`.
+
+Run `node scripts/verify-live.cjs` to verify the current website files and `node scripts/browser-qa.cjs https://shahzad-zad.github.io/` for live browser checks.

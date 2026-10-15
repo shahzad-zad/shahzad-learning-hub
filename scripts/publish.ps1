@@ -28,7 +28,9 @@ if ($LASTEXITCODE -eq 1) {
 }
 & gh repo create "$accountName/$RepositoryName" --public --source . --remote origin --description 'Class 9 to 12 student notes, chapter practice and test papers' --push
 if ($LASTEXITCODE -ne 0) { throw 'Repository creation or push failed. Check the returned GitHub error before retrying.' }
-& gh api --method POST "repos/$accountName/$RepositoryName/pages" -f build_type=workflow
+& gh api "repos/$accountName/$RepositoryName/pages" --silent 2>$null
+if ($LASTEXITCODE -eq 0) { & gh api --method PUT "repos/$accountName/$RepositoryName/pages" -f build_type=workflow }
+else { & gh api --method POST "repos/$accountName/$RepositoryName/pages" -f build_type=workflow }
 if ($LASTEXITCODE -ne 0) { throw 'Repository was created, but Pages setup failed. Choose GitHub Actions in Settings > Pages.' }
 & gh workflow run pages.yml
 if ($LASTEXITCODE -ne 0) { throw 'Pages was enabled, but workflow dispatch failed. Run it from the repository Actions tab.' }
