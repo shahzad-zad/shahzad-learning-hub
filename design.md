@@ -11,3 +11,5 @@ Notes use expandable sections with print controls. Cards flip on click, tap, Ent
 Use responsive layouts for laptop, tablet and phone, visible focus, labelled controls, live feedback and reduced-motion support. Keep assets local and URLs relative for GitHub Pages. No accounts, analytics or server are required.
 
 Homepage class cards show only Class and a large bold number. Chapter titles and resource descriptions appear after opening a class. Scope these styles to the homepage class grid so chapter cards retain their names.
+
+Class card typography matches the hero: Georgia italic for Class and the inherited sans-serif at weight 800 for the number. Compact dark cards have individual pastel accents, a circular arrow and smooth lift, glow and number movement on hover. Keyboard focus has matching emphasis; reduced-motion disables movement.
