@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path'),crypto=require('crypto');
 const site=path.resolve(__dirname,'../site');
-const base=process.argv[2]||'https://shahzad-zad.github.io/shahzad-learning-hub/';
+const base=process.argv[2]||'https://shahzad-zad.github.io/';
 const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
 const hash=buffer=>crypto.createHash('sha256').update(buffer).digest('hex');
 const normalise=(buffer,file)=>/\.(html|js|css|json)$/.test(file)?Buffer.from(buffer.toString('utf8').replace(/\r\n/g,'\n')):buffer;

@@ -2,9 +2,9 @@
 
 A student website for Classes 9–12 at The Educators (Daharki Campus), using the existing Educators dark theme and content adapted from Shahzad's local portfolio.
 
-Website: https://shahzad-zad.github.io/shahzad-learning-hub/
+Website: https://shahzad-zad.github.io/
 
-Repository: https://github.com/shahzad-zad/shahzad-learning-hub
+Repository: https://github.com/shahzad-zad/shahzad-zad.github.io
 
 ## Open locally
 
@@ -37,4 +37,4 @@ See `docs/content-guide.md`. Run `node scripts/sync-materials.cjs` on this compu
 
 ## GitHub Pages
 
-Suggested repository name: `shahzad-learning-hub`. GitHub sign-in is required to create the repository under your account. See `docs/github-pages.md` and `scripts/publish.ps1`. Never upload `portfolio-reference`, `tmp`, textbook PDFs or credentials. The deployment workflow uploads only `site`, not the rest of the workspace.
+User-site repository: `shahzad-zad.github.io`. See `docs/github-pages.md` for publication and updates. Never upload `portfolio-reference`, `tmp`, textbook PDFs or credentials. The deployment workflow uploads only `site`, not the rest of the workspace.

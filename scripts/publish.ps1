@@ -1,4 +1,4 @@
-param([string]$RepositoryName = 'shahzad-learning-hub')
+param([string]$RepositoryName = '')
 $ErrorActionPreference = 'Stop'
 $projectPath = (Resolve-Path -LiteralPath (Split-Path -Parent $PSScriptRoot)).Path
 Set-Location -LiteralPath $projectPath
@@ -13,6 +13,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Sign in with gh auth login, then run this scri
 if ($LASTEXITCODE -ne 0) { throw 'Website validation failed.' }
 $accountName = & gh api user --jq '.login'
 if ($LASTEXITCODE -ne 0) { throw 'Could not read the signed-in GitHub account.' }
+if (-not $RepositoryName) { $RepositoryName = "$accountName.github.io" }
 $existingRepository = & gh repo view "$accountName/$RepositoryName" --json name 2>$null
 if ($LASTEXITCODE -eq 0) { throw 'That GitHub repository already exists. Choose a new name or update it explicitly.' }
 $gitRoot = & git rev-parse --show-toplevel 2>$null
@@ -32,5 +33,6 @@ if ($LASTEXITCODE -ne 0) { throw 'Repository was created, but Pages setup failed
 & gh workflow run pages.yml
 if ($LASTEXITCODE -ne 0) { throw 'Pages was enabled, but workflow dispatch failed. Run it from the repository Actions tab.' }
 Write-Output "Repository: https://github.com/$accountName/$RepositoryName"
-Write-Output "Website deployment: https://$accountName.github.io/$RepositoryName/"
+if ($RepositoryName -eq "$accountName.github.io") { Write-Output "Website deployment: https://$accountName.github.io/" }
+else { Write-Output "Website deployment: https://$accountName.github.io/$RepositoryName/" }
 Write-Output 'Check the Actions run for the final deployment status.'
