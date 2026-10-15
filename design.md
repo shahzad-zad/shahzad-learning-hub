@@ -9,3 +9,5 @@ The homepage portrait is enlarged and cropped with CSS. Hover or keyboard focus 
 Notes use expandable sections with print controls. Cards flip on click, tap, Enter or Space to show the answer and explanation. Previous and Next remain outside the card. MCQs reveal explanations after selection, highlight the correct option and animate feedback. Both formats support topics, shuffle and local progress.
 
 Use responsive layouts for laptop, tablet and phone, visible focus, labelled controls, live feedback and reduced-motion support. Keep assets local and URLs relative for GitHub Pages. No accounts, analytics or server are required.
+
+Homepage class cards show only Class and a large bold number. Chapter titles and resource descriptions appear after opening a class. Scope these styles to the homepage class grid so chapter cards retain their names.
