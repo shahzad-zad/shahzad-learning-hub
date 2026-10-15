@@ -7,7 +7,7 @@ const esc = value => String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;
 const publicContent = JSON.parse(fs.readFileSync(path.join(portfolio,'data/site-content.json'),'utf8'));
 copy(path.join(portfolio,'data/site-content.json'),'portfolio-reference/data/site-content.json');
 for (const file of ['src/components/home-client.tsx','src/app/globals.css','src/app/page.tsx','package.json','README.md']) copy(path.join(portfolio,file),'portfolio-reference/'+file);
-copy('F:/My Portfolio/my picture professional.png','site/assets/shahzad-portrait.png');
+copy('F:/My Portfolio/future is here.png','site/assets/shahzad-header.png');
 copy(path.join(workspace,'Educators-Master/assets/logo.png'),'site/assets/logo.png');
 const profile = {bio:publicContent.site.bio,email:publicContent.site.email,linkedin:publicContent.site.linkedin,
  projects:publicContent.projects.slice(0,3).map(({title,summary,tag})=>({title,summary,tag}))};
@@ -30,5 +30,5 @@ for (const [grade,title,slug] of [['11th','Kinematics','kinematics'],['12th','Fi
 }
 const publicResources = resources.map(({source,...r})=>r);
 write('site/data/catalog.js','window.LEARNING_HUB = '+JSON.stringify({profile,resources:publicResources},null,2)+';\n');
-write('portfolio-reference/README.md',"# Portfolio reference copy\n\nCopied from F:/My Portfolio/portfolio website/shahzad-portfolio. Includes public content data and selected presentation source files. This local reference is excluded from Git and is not published. The student website adapts the profile biography, qualifications in home-client.tsx, first three research descriptions, and the supplied professional portrait. The original portfolio remains untouched. Server CMS code, credentials, dependencies, build caches and CV files are not copied.\n");
+write('portfolio-reference/README.md',"# Portfolio reference copy\n\nCopied from F:/My Portfolio/portfolio website/shahzad-portfolio. Includes public content data and selected presentation source files. This local reference is excluded from Git and is not published. The student website adapts the profile biography, qualifications in home-client.tsx, first three research descriptions, and the supplied header artwork. The original portfolio remains untouched. Server CMS code, credentials, dependencies, build caches and CV files are not copied.\n");
 console.log(`Synced ${resources.length} resources, 32 notes sections, two chapter pages, two MCQ banks and portfolio profile content.`);
